@@ -12,25 +12,48 @@
       text-align: center;
       padding: 20px;
     }
+
     header {
       font-size: 2em;
       margin-bottom: 20px;
       color: #8b0000;
     }
+
     .description {
       margin: 20px auto;
       max-width: 600px;
       font-size: 1.1em;
     }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
     .gallery img {
-      width: 200px;
+      width: 220px;
       margin: 10px;
       border: 2px solid #ccc;
       border-radius: 10px;
     }
+
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
+      margin-top: 50px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .qr-code {
+      margin-top: 15px;
+    }
+
+    .qr-code img {
+      width: 140px;
+      border: 1px solid #888;
+      padding: 5px;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -52,10 +75,11 @@
   </section>
 
   <footer>
-    <p>
-      هذا الموقع يعرض لمحات من تراث منطقة جازان العريق. لزيارة الموقع بالجوال، امسح رمز QR:
-    </p>
-    <img src="images/qrcode.png" alt="QR Code" width="150">
+    <p>لمشاهدة الموقع على الجوال، امسح رمز QR التالي:</p>
+    <div class="qr-code">
+      <img src="images/qrcode.png" alt="QR Code">
+    </div>
+    <p>© 2025 التراث الجيزاني</p>
   </footer>
 
 </body>
